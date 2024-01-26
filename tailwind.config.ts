@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { Poppins } from "next/font/google";
 
 const config: Config = {
   content: [
@@ -8,11 +9,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      objectPosition: {
+        left: "left",
       },
+      textColor: {
+        primary: "#313131",
+        secondary: "#626262",
+        primaryBlue: "#009FD1",
+        baseGrey: "#494949",
+        lightGrey: "#626262",
+      },
+      borderColor: {
+        primaryBlue: "#009FD1",
+      },
+      backgroundColor:{
+        primaryBlue: "#009FD1",
+        secondaryBlue: "#CCECF6",
+      },
+      boxShadow: {
+        mainShadow: "0px 0px 55px 0px rgba(0, 0, 0, 0.10)",
+      },
+      fontFamily:{
+        poppins: ["Poppins"],
+      }
     },
   },
   plugins: [],
